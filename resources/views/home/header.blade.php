@@ -4,7 +4,7 @@
                 <div class="col-md-4">
                     <div class="header-item">
                         <img src="img/icons/delivery.png" alt="">
-                        <p>Free shipping on orders over $30 in USA</p>
+                        <p>Free shipping on orders over $30 for this mounth</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-left text-lg-center">
@@ -16,7 +16,7 @@
                 <div class="col-md-4 text-left text-xl-right">
                     <div class="header-item">
                     <img src="img/icons/sales.png" alt="">
-                    <p>30% off on dresses. Use code: 30OFF</p>
+                    <p>30% off on dresses. Use code: sunflower</p>
                 </div>
                 </div>
             </div>

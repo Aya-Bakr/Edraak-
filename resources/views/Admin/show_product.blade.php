@@ -17,12 +17,12 @@
             padding-top:20px;
             font-family:bold;  
         }
-        .imag_size{
+        .img_size{
             width: 150px ;
             height: 150px;
         }
         .th_color{
-            background:skyblue;
+            background:pink;
         }
         .th_deg{
             padding: 30px;
@@ -53,10 +53,10 @@
             <tr class="th_color">
                 <th class="th_deg">product title</th>
                 <th class="th_deg">description</th>
-                <th class="th_deg">Quantity</th>
+                <th class="th_deg">quantity</th>
                 <th class="th_deg">catagorey</th>
                 <th class="th_deg">price</th>
-                <th class="th_deg">discount_price</th>
+                <th class="th_deg">discount price</th>
                 <th class="th_deg">product Image</th>
                 <th class="th_deg">Delete </th>
                 <th class="th_deg">Edit</th>
@@ -65,16 +65,16 @@
             <tr>
                 <td>{{$product->title}}</td>
                 <td>{{$product->description}}</td>
-                <td>{{$product->Quantity}}</td>
+                <td>{{$product->quantity}}</td>
                 <td>{{$product->catagorey}}</td>
                 <td>{{$product->price}}</td>
                 <td>{{$product->discount_price}}</td>
                 <td>
-                <img class="imag_size" src="/product/{{$product->image}}">
+                <img class="img_size" src="/product/{{$product->image}}">
 
                 </td>
                         <td>
-                            <a class="btn btn-danger"  onclike="return confirm('are you sure to delete this ')"href="{{url('delete_product',$product->id)}}">Delelet</a>
+                            <a class="btn btn-danger"  onclick="return confirm('are you sure to delete this ')" href="{{url('delete_product',$product->id)}}">Delete</a>
                         </td>
 
                         <td>

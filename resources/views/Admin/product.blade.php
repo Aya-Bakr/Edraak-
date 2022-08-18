@@ -57,34 +57,34 @@
                 <div class="div_design">
 
                 <lable>product Title</lable>
-                <input class="text_color" type="text" name="title" placeholder="Wite a title" required="">
+                <input class="text_color" type="text" name="title" placeholder="Write a title" required="">
         </div>
 
 
         <div class="div_design">
 
                 <lable>product description</lable>
-                <input class="text_color" type="text" name="description" placeholder="Wite a description" required="">
+                <input class="text_color" type="text" name="description" placeholder="Write a description" required="">
         </div>
 
         <div class="div_design">
 
                 <lable>product price</lable>
-                <input class="text_color" type="number" name="price" placeholder="Wite a price" required="">
+                <input class="text_color" type="number" name="price" placeholder="Write a price" required="">
         </div>
         
 
         <div class="div_design">
 
-                <lable>discount_price</lable>
-                <input class="text_color" type="number" name="discount_price" placeholder="Wite a dis_price" required="">
+                <lable>discount price</lable>
+                <input class="text_color" type="number" name="dis_price" placeholder="Write a dis_price" required="">
         </div>
 
 
                 <div class="div_design">
 
                 <lable>product quantity</lable>
-                <input class="text_color" type="number" min="0" name="Quantity" placeholder="Wite a Quantity" required="">
+                <input class="text_color" type="number" min="0" name="Quantity" placeholder="Write a Quantity" required="">
         </div>
 
 
@@ -105,7 +105,7 @@
                     <div class="div_design">
 
                 <lable>product Image Here : </lable>
-                <input type="file" name="file" >
+                <input type="file" name="image" >
                     <div>
                 <input type="submit" value=" Add product" class="btn btn-primary">
         </div>

@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Yoga Studio Template">
+    <meta name="description" content="Yoga Studio">
     <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Violet | Template</title>
+    <title>Violet Online store</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
         <div class="container-fluid">
             <div class="inner-header">
                 <div class="logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="{{url('/')}}"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="header-right">
                     <img src="img/icons/search.png" alt="" class="search-trigger">
@@ -57,12 +57,23 @@
                     </a>
                 </div>
                 <div class="user-access">
-                    <a href="#">Register</a>
-                    <a href="#" class="in">Sign in</a>
+                    <a href="{{ route('register') }}">Register</a>
+                    @if (Route::has('login'))
+                    @auth
+
+                    <li class="nav-item">
+                          <x-app-layout>
+                          </x-app-layout>
+                        </li>
+                        @else
+                    <a href="{{ route('login') }}" class="in">login</a>
+                    @endauth
+                    @endif
                 </div>
+                
                 <nav class="main-menu mobile-menu">
                     <ul>
-                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a class="active" href="{{url('/')}}">Home</a></li>
                         <li><a href="./categories.html">Shop</a>
                             <ul class="sub-menu">
                                 <li><a href="product-page.html">Product Page</a></li>
@@ -72,7 +83,7 @@
                         </li>
                         <li><a href="./product-page.html">About</a></li>
                         <li><a href="./check-out.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="{{('show_cart')}}">Cart</a></li>
                     </ul>
                 </nav>
             </div>
@@ -94,7 +105,7 @@
     <!-- Features Section End -->
 
     <!-- Latest Product Begin -->
-    @include('home.latestproducts')
+    @include('home.product')
 
     <!-- Latest Product End -->
 
@@ -112,6 +123,16 @@
     @include('home.footer')
 
     <!-- Footer Section End -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
 
     <!-- Js Plugins -->
     <script src="home/js/jquery-3.3.1.min.js"></script>

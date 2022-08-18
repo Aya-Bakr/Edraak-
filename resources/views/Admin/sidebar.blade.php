@@ -1,6 +1,5 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="index.html"><img src="Admin/images/logo.svg" alt="logo" /></a>
           <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="Admin/images/logo-mini.svg" alt="logo" /></a>
         </div>
         <ul class="nav">
@@ -8,11 +7,11 @@
             <div class="profile-desc">
               <div class="profile-pic">
                 <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="images/IMG_1434.JPG" alt="">
+                  <img class="img-xs rounded-circle " src="public/admin/assets/images/ghj.png" alt="">
                   <span class="count bg-success"></span>
                   <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Khalid Mohmmed</h5>
-                  <span>connect</span>
+                  <h5 class="mb-0 font-weight-normal">Aya</h5>
+                  <span>Active</span>
                 </div>
                 </div>
                 
@@ -92,11 +91,11 @@
 
 
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('view_catagorey')}}">
+            <a class="nav-link" href="{{url('order')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
-              <span class="menu-title">order</span>
+              <span class="menu-title">Order</span>
             </a>
           </li>
 
